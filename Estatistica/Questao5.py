@@ -3,7 +3,7 @@ from collections import Counter
 import matplotlib.pyplot as plt
 import numpy as np
 if __name__ == '__main__':
-    a_0 = [0]*25
+    a_0 = [0] * 25
     a_1 = [1] * 20
     a_2 = [2] * 3
     a_3 = [3] * 1
@@ -24,5 +24,4 @@ if __name__ == '__main__':
     plt.xticks(xticks,labels = ["0","1","2","3","4"])
     plt.ylabel('Frequencia')
     plt.title('Histograma')
-   # plt.margins(x=0.005) # less padding left and right
     plt.show()
