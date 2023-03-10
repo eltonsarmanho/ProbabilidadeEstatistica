@@ -20,6 +20,7 @@ if __name__ == '__main__':
     print(recounted)
 
     lst = pd.Series(a)
+    print("Sumarização dos dados")
     print(lst.describe())
     n, bins, patches = plt.hist(x=a, bins=5, color='#0504aa',
                                 alpha=0.7, rwidth=0.85,)

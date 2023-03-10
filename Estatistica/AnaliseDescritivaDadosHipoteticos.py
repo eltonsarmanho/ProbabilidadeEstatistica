@@ -21,7 +21,7 @@ def loadData():
     print(data.info())
 
 
-    data_url = "https://raw.githubusercontent.com/eltonsarmanho/ProbabilidadeEstatistica/master/Dados/monitoraCovid.csv"
+    data_url = "https://raw.githubusercontent.com/eltonsarmanho/ProbabilidadeEstatistica/master/Dados/projetoIOT_Covid.csv"
     data = pd.read_csv(data_url)
 
     print(data.describe())
