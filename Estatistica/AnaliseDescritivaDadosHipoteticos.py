@@ -7,15 +7,18 @@ def loadData():
     print(data.describe())
     print(data.info())
 
-    df = pd.read_csv(
+    #https://gist.github.com/aishwarya8615/89d9f36fc014dea62487f7347864d16a
+    data = pd.read_csv(
         "https://raw.githubusercontent.com/ThuwarakeshM/geting-started-with-plottly-dash/main/life_expectancy.csv"
     )
-    print(df.info())
-
+    print(data.describe())
+    print(data.info())
+    #https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales
     data_url = "https://raw.githubusercontent.com/plotly/datasets/master/supermarket_Sales.csv"
-    sales = pd.read_csv(data_url)
+    data = pd.read_csv(data_url)
 
-    print(sales.info())
+    print(data.describe())
+    print(data.info())
 
 
 if __name__ == '__main__':
