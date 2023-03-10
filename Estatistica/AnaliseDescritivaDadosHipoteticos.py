@@ -21,5 +21,11 @@ def loadData():
     print(data.info())
 
 
+    data_url = "https://raw.githubusercontent.com/eltonsarmanho/ProbabilidadeEstatistica/master/Dados/monitoraCovid.csv"
+    data = pd.read_csv(data_url)
+
+    print(data.describe())
+    print(data.info())
+
 if __name__ == '__main__':
    loadData()
