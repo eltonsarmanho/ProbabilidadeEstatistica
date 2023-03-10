@@ -1,6 +1,8 @@
 import itertools
 from collections import Counter
 import matplotlib.pyplot as plt
+import statistics
+import pandas as pd
 import numpy as np
 if __name__ == '__main__':
     a_0 = [0] * 25
@@ -16,6 +18,9 @@ if __name__ == '__main__':
     a.extend(a_4)
     recounted = Counter(a)
     print(recounted)
+
+    lst = pd.Series(a)
+    print(lst.describe())
     n, bins, patches = plt.hist(x=a, bins=5, color='#0504aa',
                                 alpha=0.7, rwidth=0.85,)
     plt.grid(axis='y', alpha=0.75)
