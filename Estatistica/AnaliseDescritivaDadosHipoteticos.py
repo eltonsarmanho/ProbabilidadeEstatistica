@@ -27,5 +27,13 @@ def loadData():
     print(data.describe())
     print(data.info())
 
+    data_url = "https://raw.githubusercontent.com/eltonsarmanho/ProbabilidadeEstatistica/master/Dados/uber.csv"
+    data = pd.read_csv(data_url)
+
+    #https://www.kaggle.com/datasets/yasserh/uber-fares-dataset?select=uber.csv
+    print(data.describe())
+    print(data.info())
+
+
 if __name__ == '__main__':
    loadData()
