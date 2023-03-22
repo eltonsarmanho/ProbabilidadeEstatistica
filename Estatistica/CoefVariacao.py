@@ -9,7 +9,8 @@ print("Cv : %s" % cv(data))
 
 
 #Lendo a partir de um dataset
-data = pd.read_csv("https://raw.githubusercontent.com/eltonsarmanho/ProbabilidadeEstatistica/master/Dados/iris.csv")
+#data = pd.read_csv("https://raw.githubusercontent.com/eltonsarmanho/ProbabilidadeEstatistica/master/Dados/iris.csv")
+data = pd.read_csv("../Dados/iris.csv")
 
 #Calcular considerando todos os elementos do dataset
 data_colunasNumericas = data.drop(['variety'],axis=1)#Remove Coluna Categorica
