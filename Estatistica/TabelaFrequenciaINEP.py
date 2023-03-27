@@ -6,9 +6,14 @@ if __name__ == '__main__':
 
     data = pd.read_csv("../Dados/inep_saeb_merge_fatorial_2017.csv",
                        delimiter='\t')
+
+    aux = data[['ID_MUNICIPIO', 'MEDIA_5EF_LP', 'MEDIA_5EF_MT']]
+    print(aux.describe())
     filter = data['ID_MUNICIPIO'] == 1502103;
     df_pa = data[filter];
     df = df_pa['MEDIA_5EF_LP'].dropna(axis=0)
+
+
     print(df)
     df = np.sort(df)
 
