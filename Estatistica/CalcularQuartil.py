@@ -1,10 +1,11 @@
 from statistics import quantiles
 import pandas as pd
 import numpy as np
-
+#Lista de dados
 data = [4, 6, 6, 7, 8, 12, 15, 17, 20, 21, 21, 23, 24, 27, 28]
-#Print o valor exato
+#Print o valor exato - Comando 1
 [print(round(q, 1)) for q in quantiles(data, n=4)]
+
 #printa valores excludentes ou a partir de %
 data  = pd.Series(data)
 print(data.describe())

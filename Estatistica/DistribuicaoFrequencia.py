@@ -1,8 +1,14 @@
 import math
+
+import numpy as np
 import pandas as pd
 if __name__ == '__main__':
-    df = [3.2,4.1,4.9 , 5.0 , 7.3 , 6.7 , 6.6 , 7.4 , 7.1 , 4.0 , 5.5 , 5.4 , 6.5 , 6.5 , 7.1 , 5.2 , 8.3 , 5.7 , 6.8,  6.4]
-    df.sort()
+
+    data = pd.read_csv("../Dados/iris.csv")
+    df = data['petal.length']
+    #df = [3.2,4.1,4.9 , 5.0 , 7.3 , 6.7 , 6.6 , 7.4 , 7.1 , 4.0 , 5.5 , 5.4 , 6.5 , 6.5 , 7.1 , 5.2 , 8.3 , 5.7 , 6.8,  6.4]
+    #df.sort()
+    np.sort(df)
     #Ordena os elementos
     #print(df)
 

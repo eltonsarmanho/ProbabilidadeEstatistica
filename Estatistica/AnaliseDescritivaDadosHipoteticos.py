@@ -3,7 +3,9 @@ import math
 import pandas as pd
 
 def loadData():
-    data = pd.read_csv("https://raw.githubusercontent.com/eltonsarmanho/ProbabilidadeEstatistica/master/Dados/dadosHipoteticos.csv")
+    data = pd.read_csv("https://raw.githubusercontent.com/"
+                       "eltonsarmanho/ProbabilidadeEstatistica/"
+                       "master/Dados/dadosHipoteticos.csv")
     print(data.describe())
     print(data.info())
 

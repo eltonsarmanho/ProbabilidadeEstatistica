@@ -1,7 +1,8 @@
 import numpy as np
 import pandas as pd
 #Cria vetor Simples
-data = [88, 85, 82, 97, 67, 77, 74, 86, 81, 95, 77, 88, 85, 76, 81, 82]
+data = [88, 85, 82, 97, 67, 77, 74,
+        86, 81, 95, 77, 88, 85, 76, 81, 82]
 #Define a função CV
 cv = lambda x: np.std(x, ddof=1) / np.mean(x) * 100
 #Calcula CV
